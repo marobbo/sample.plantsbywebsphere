@@ -10,9 +10,6 @@ COPY --chown=1001:0  *gradle* /config/
 # Default setting for the verbose option
 ARG VERBOSE=false
 
-CMD ls -al
-CMD ls -al /gradle/wrapper/
-
 
 # This script will add the requested XML snippets, grow image to be fit-for-purpose and apply interim fixes
-RUN /config/gradlew start open
+RUN ls -al && /config/gradlew start open
