@@ -12,4 +12,4 @@ ARG VERBOSE=false
 
 
 # This script will add the requested XML snippets, grow image to be fit-for-purpose and apply interim fixes
-RUN ls -al && /config/gradlew start open
+RUN /config/gradlew start open
